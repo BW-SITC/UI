@@ -1,0 +1,110 @@
+.main-header{
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/studentOnComputer.jpg');
+    background-size: 500px 350px;
+    background-position: center top;
+
+    height: 350px;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    div{
+        width: 300px;
+        text-align: center;
+
+        margin-left: 50px;
+
+        h1{
+            // padding: 5px;
+        }
+        h2{
+            padding: 15px;
+        }
+    }
+
+    button{
+        background: @btn-bg;
+        border-radius: 50px;
+
+        color: white;
+        font-size: 1.8rem;
+
+        padding: 8px 20px;
+    }
+}
+
+.how-works{
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 20px 0;
+
+    .how-img{
+        width: 40%;
+    }
+    div{
+        width: 40%;
+    }
+}
+
+.mentors{
+    background: @section-background;
+
+    padding: 20px 0;
+
+    h2{
+        text-align: center;
+    }
+
+    .mentor{
+        display: flex;
+        align-items: center;
+
+        padding: 10px 30px;
+
+        .mentor-text{
+            margin-left: 20px;
+        }
+    }
+    img{
+        width: 100px;
+        border-radius: 100px;
+    }
+}
+
+.classes{
+
+    padding: 20px 0;
+
+    h2{
+        text-align: center;
+    }
+
+    .class-tile-cont{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+
+    .class{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        width: 40%;
+        height: 80px;
+
+        background: @section-background;
+
+        font-size: 2rem;
+
+        margin: 20px 0;
+    }
+
+    img{
+        width: 70px;
+    }
+}
