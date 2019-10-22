@@ -131,10 +131,10 @@ html body {
   font-size: 1.6rem;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 p {
   font-size: 1.6rem;
@@ -182,17 +182,33 @@ footer nav a {
 }
 .main-header {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/studentOnComputer.jpg');
-  background-size: 500px 350px;
+  background-size: auto auto;
   background-position: center top;
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
   height: 350px;
   color: white;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
+@media (min-width: 700px) {
+  .main-header {
+    height: 500px;
+  }
+}
+@media (min-width: 1100px) {
+  .main-header {
+    height: 750px;
+  }
+}
 .main-header div {
-  width: 300px;
+  width: 350px;
   text-align: center;
-  margin-left: 50px;
+  padding-right: 40%;
 }
 .main-header div h2 {
   padding: 15px;
@@ -207,17 +223,34 @@ footer nav a {
 .how-works {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   padding: 20px 0;
 }
 .how-works .how-img {
-  width: 40%;
+  max-width: 40%;
+  max-height: 200px;
 }
 .how-works div {
   width: 40%;
 }
+.how-works div h2 {
+  margin: 10px 0;
+}
 .mentors {
   background: #eeeeee;
   padding: 20px 0;
+}
+.mentors .mentor-tile-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (min-width: 1100px) {
+  .mentors .mentor-tile-cont {
+    flex-direction: row;
+  }
 }
 .mentors h2 {
   text-align: center;
@@ -255,6 +288,18 @@ footer nav a {
   font-size: 2rem;
   margin: 20px 0;
 }
+@media (min-width: 700px) {
+  .classes .class {
+    flex-direction: column-reverse;
+    width: 20%;
+    height: 180px;
+  }
+}
 .classes img {
-  width: 70px;
+  max-height: 80%;
+}
+@media (min-width: 700px) {
+  .classes img {
+    max-width: 60%;
+  }
 }

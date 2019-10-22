@@ -1,20 +1,33 @@
 .main-header{
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/studentOnComputer.jpg');
-    background-size: 500px 350px;
+    background-size: auto auto;
     background-position: center top;
+
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
 
     height: 350px;
 
     color: white;
 
     display: flex;
+    justify-content: center;
     align-items: center;
 
+    @media @tablet{
+        height: 500px;
+    }
+
+    @media @desktop{
+        height: 750px;
+    }
+
     div{
-        width: 300px;
+        width: 350px;
         text-align: center;
 
-        margin-left: 50px;
+        padding-right: 40%;
 
         h1{
             // padding: 5px;
@@ -38,14 +51,19 @@
 .how-works{
     display: flex;
     justify-content: space-evenly;
-
+    align-items: center;
     padding: 20px 0;
 
     .how-img{
-        width: 40%;
+        max-width: 40%;
+        max-height: 200px;
     }
     div{
         width: 40%;
+
+        h2{
+            margin: 10px 0;
+        }
     }
 }
 
@@ -53,6 +71,21 @@
     background: @section-background;
 
     padding: 20px 0;
+
+    .mentor-tile-cont{
+        width: 100%;
+
+        // background: mediumaquamarine;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        @media @desktop{
+            flex-direction: row;
+        }
+    }
 
     h2{
         text-align: center;
@@ -102,9 +135,19 @@
         font-size: 2rem;
 
         margin: 20px 0;
+
+        @media @tablet{
+            flex-direction: column-reverse;
+            width: 20%;
+            height: 180px;
+        }
     }
 
     img{
-        width: 70px;
+        max-height: 80%;
+
+        @media @tablet{
+            max-width:60%;
+        }
     }
 }
