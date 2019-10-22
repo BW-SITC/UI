@@ -182,18 +182,16 @@ footer nav a {
 }
 .main-header {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/studentOnComputer.jpg');
-  background-size: auto auto;
   background-position: center top;
   background-position: center;
   /* Center the image */
   background-repeat: no-repeat;
   /* Do not repeat the image */
   background-size: cover;
+  display: flex;
+  align-items: center;
   height: 350px;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 @media (min-width: 700px) {
   .main-header {
@@ -205,12 +203,24 @@ footer nav a {
     height: 750px;
   }
 }
-.main-header div {
+.main-header .main-header-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.main-header .call-to-action {
   width: 350px;
   text-align: center;
-  padding-right: 40%;
 }
-.main-header div h2 {
+@media (min-width: 700px) {
+  .main-header .call-to-action {
+    padding-right: 40%;
+  }
+}
+.main-header .call-to-action h2 {
   padding: 15px;
 }
 .main-header button {
@@ -221,10 +231,15 @@ footer nav a {
   padding: 8px 20px;
 }
 .how-works {
+  padding: 20px 0;
+}
+.how-works .how-cont {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 20px 0;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 .how-works .how-img {
   max-width: 40%;
@@ -242,6 +257,8 @@ footer nav a {
 }
 .mentors .mentor-tile-cont {
   width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -277,6 +294,8 @@ footer nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 .classes .class {
   display: flex;
