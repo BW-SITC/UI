@@ -7,12 +7,13 @@
     background-size: cover;
 
 
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
+    .flex(row, center, none);
 
     height: 350px;
 
-    color: white;
+    color: @white;
 
     @media @tablet{
         height: 500px;
@@ -23,14 +24,11 @@
     }
 
     .main-header-cont{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        .flex(row, center, none);
 
         width: 100%;
 
-        max-width: @max-content-width;
-        margin: 0 auto;
+        .limit-max-width();
     }
 
     .call-to-action{
@@ -47,14 +45,7 @@
     }
 
     button{
-        background: @school-color;
-        border: 1px solid grey;
-        border-radius: 10px;
-
-        color: white;
-        font-size: 1.8rem;
-
-        padding: 8px 20px;
+        .button-base(@school-color, @white, 1.8rem);
     }
 }
 
@@ -64,12 +55,9 @@
     .how-cont{
         width: 100%;
 
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        .flex(row, space-evenly, none);
 
-        max-width: @max-content-width;
-        margin: 0 auto;
+        .limit-max-width();
     }
 
     .how-img{
@@ -93,13 +81,9 @@
     .mentor-tile-cont{
         width: 100%;
         
-        max-width: @max-content-width;
-        margin: 0 auto;
+        .limit-max-width();
 
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        .flex(column, space-evenly, none);
     
         @media @desktop{
             flex-direction: row;
@@ -111,8 +95,7 @@
     }
 
     .mentor{
-        display: flex;
-        align-items: center;
+        .flex(row, center, none);
 
         padding: 10px 30px;
 
@@ -135,21 +118,15 @@
     }
 
     .class-tile-cont{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        .flex(row, space-evenly, wrap);
 
-        max-width: @max-content-width;
-        margin: 0 auto;
+        .limit-max-width();
     }
 
 
     .class{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        .flex(column-reverse, space-evenly, none);
 
-        flex-direction: column-reverse;
         width: 40%;
         height: 180px;
 
