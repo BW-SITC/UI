@@ -9,17 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
 </head>
 
 <body>
     <header class="nav-header">
-        <a href="/index.html">
+        <a href="/index.html" class="logo">
+            <img src="/images/cloudLogo.png" alt="cloud logo">
             <h2 class="tempLogo">School in the Cloud</h2>
         </a>
         <nav>
             <a href="/about.html">About</a>
-            <a href="#">Sign Up</a>
+            <a href="http://sitc.netlify.com">Sign Up</a>
         </nav>
     </header>
     <section class="nav-fixed-spacer"></section>
@@ -38,6 +40,9 @@
         <div class="about-cont">
             <div>
                 <h2>About this project</h2>
+                <div class="github">
+                    <a href="https://github.com/BW-SITC" class="fa fa-github"></a>
+                </div>
                 <div class="about-item-cont">
                     <div class="about-item">
                         <h3>Lorem ipsum</h3>
@@ -59,7 +64,8 @@
                     </div>
                 </div>
             </div>
-            <img class="how-img" src="images/undraw_teacher_35j2.svg" alt="woman teaching from behind a computer">
+            <img class="how-img" src="images/undraw_pair_programming_njlp.svg"
+                alt="illustration of two people pair programming on a computer">
         </div>
     </section>
 
@@ -67,52 +73,72 @@
         <h2>Meet the team</h2>
         <div class="team-tile-cont">
             <div class="team">
-                <img src="images/mary.png" alt="headshot of an elderly woman smiling">
+                <img src="images/john.png" alt="headshot of an elderly woman smiling">
                 <div class="team-text">
                     <h3>John Rojcewitz</h3>
-                    <h4>Backend</h4>
+                    <h4>Backend Developer</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus pariatur vero rerum
                         distinctio optio dolorum asperiores voluptatum enim.</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/rojcewiczj" class="fa fa-github"></a>
+                    <a href="https://www.linkedin.com/in/john-rojcewicz-45050950/" class="fa fa-linkedin"></a>
                 </div>
             </div>
 
             <div class="team">
-                <img src="images/mary.png" alt="headshot of an elderly woman smiling">
+                <img src="images/mark.png" alt="headshot of an elderly woman smiling">
                 <div class="team-text">
                     <h3>Mark French</h3>
-                    <h4>Frontend, Sr.</h4>
+                    <h4>Frontend React Developer II</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus pariatur vero rerum
                         distinctio optio dolorum asperiores voluptatum enim.</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/juarezfrench" class="fa fa-github"></a>
+                    <a href="https://www.linkedin.com/in/mark-french-0117531a/" class="fa fa-linkedin"></a>
                 </div>
             </div>
 
             <div class="team">
-                <img src="images/mary.png" alt="headshot of an elderly woman smiling">
+                <img src="images/justin.png" alt="headshot of an elderly woman smiling">
                 <div class="team-text">
                     <h3>Justin C Williams</h3>
-                    <h4>Frontend, Jr.</h4>
+                    <h4>Frontend React Developer I</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus pariatur vero rerum
                         distinctio optio dolorum asperiores voluptatum enim.</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/justinwilly" class="fa fa-github"></a>
+                    <a href="https://www.linkedin.com/in/justin-c-williams-/" class="fa fa-linkedin"></a>
                 </div>
             </div>
 
             <div class="team">
-                <img src="images/mary.png" alt="headshot of an elderly woman smiling">
+                <img src="images/phil.png" alt="headshot of an elderly woman smiling">
                 <div class="team-text">
                     <h3>Phil MacEachron</h3>
-                    <h4>UI</h4>
+                    <h4>UI Developer</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus pariatur vero rerum
                         distinctio optio dolorum asperiores voluptatum enim.</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/phil-mac" class="fa fa-github"></a>
+                    <a href="https://www.linkedin.com/in/phil-maceachron-26104b71/" class="fa fa-linkedin"></a>
                 </div>
             </div>
 
             <div class="team">
-                <img src="images/mary.png" alt="headshot of an elderly woman smiling">
+                <img src="images/emily.png" alt="headshot of an elderly woman smiling">
                 <div class="team-text">
                     <h3>Emily McClanahan</h3>
-                    <h4>Project Manager</h4>
+                    <h4>Project Lead</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus pariatur vero rerum
                         distinctio optio dolorum asperiores voluptatum enim.</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/VivaCode" class="fa fa-github"></a>
+                    <a href="https://www.linkedin.com/in/emily-mcclanahan-9a816940/" class="fa fa-linkedin"></a>
                 </div>
             </div>
 
@@ -120,33 +146,11 @@
 
     </section>
 
-    <!-- <section class="classes">
-        <h2>Popular Classes</h2>
-        <div class="class-tile-cont">
-            <div class="class">
-                <h3>Math</h3>
-                <img src="images/undraw_mathematics_4otb.svg" alt="">
-            </div>
-            <div class="class">
-                <h3>Math</h3>
-                <img src="images/undraw_mathematics_4otb.svg" alt="">
-            </div>
-            <div class="class">
-                <h3>Math</h3>
-                <img src="images/undraw_mathematics_4otb.svg" alt="">
-            </div>
-            <div class="class">
-                <h3>Math</h3>
-                <img src="images/undraw_mathematics_4otb.svg" alt="">
-            </div>
-        </div>
-    </section> -->
-
     <footer>
         <h2 class="tempLogo">School in the Cloud</h2>
         <nav>
-            <a href="#">About</a>
-            <a href="#">Sign Up</a>
+            <a href="/about.html">About</a>
+            <a href="http://sitc.netlify.com">Sign Up</a>
         </nav>
         <p>Copyright @ 2019 School in the Cloud</p>
     </footer>

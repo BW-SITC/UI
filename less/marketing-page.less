@@ -47,8 +47,9 @@
     }
 
     button{
-        background: @btn-bg;
-        border-radius: 50px;
+        background: @school-color;
+        border: 1px solid grey;
+        border-radius: 10px;
 
         color: white;
         font-size: 1.8rem;
@@ -87,7 +88,7 @@
 .mentors{
     background: @section-background;
 
-    padding: 20px 0;
+    padding: 40px 0 20px 0;
 
     .mentor-tile-cont{
         width: 100%;
@@ -127,7 +128,7 @@
 
 .classes{
 
-    padding: 20px 0;
+    padding: 40px 0 20px 0;
 
     h2{
         text-align: center;
@@ -148,8 +149,9 @@
         justify-content: space-evenly;
         align-items: center;
 
+        flex-direction: column-reverse;
         width: 40%;
-        height: 80px;
+        height: 180px;
 
         background: @section-background;
 
@@ -166,6 +168,7 @@
 
     img{
         max-height: 80%;
+        max-width:60%;
 
         @media @tablet{
             max-width:60%;

@@ -124,6 +124,20 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMwr7Jg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v11/XRXV3I6Li01BKofINeaE.ttf) format('truetype');
+}
 html {
   font-size: 62.5%;
 }
@@ -139,39 +153,64 @@ h2 {
 h3 {
   font-size: 2rem;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: 'Nunito', sans-serif;
+}
 p {
   font-size: 1.6rem;
+  font-family: 'Lora', serif;
 }
 button {
   font-size: 2.5rem;
 }
 .nav-header {
-  background: #eeeeee;
+  background: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   width: 100%;
   height: 60px;
+  border-bottom: 2px solid #d3d3d3;
+  z-index: 5;
+}
+.nav-header .logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 15px;
+}
+.nav-header img {
+  width: 60px;
+  height: 40px;
 }
 .nav-header h2 {
   padding: 15px;
+  color: #9370DB;
 }
 .nav-header nav {
   display: flex;
   justify-content: space-between;
 }
-.nav-header a {
+.nav-header nav a {
   text-decoration: none;
   color: black;
   font-size: 2rem;
+  color: #9370DB;
   padding: 15px;
 }
 .nav-fixed-spacer {
   height: 60px;
 }
 footer {
-  background: #1c1c9d;
+  background: #9370DB;
   color: white;
   text-align: center;
   padding: 10px 0;
@@ -182,6 +221,7 @@ footer nav {
 footer nav a {
   color: white;
   text-decoration: none;
+  padding: 0 10px;
 }
 .main-header {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/studentOnComputer.jpg');
@@ -199,7 +239,7 @@ footer nav a {
     height: 500px;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
   .main-header {
     height: 750px;
   }
@@ -225,8 +265,9 @@ footer nav a {
   padding: 15px;
 }
 .main-header button {
-  background: #5cc75c;
-  border-radius: 50px;
+  background: #9370DB;
+  border: 1px solid grey;
+  border-radius: 10px;
   color: white;
   font-size: 1.8rem;
   padding: 8px 20px;
@@ -254,7 +295,7 @@ footer nav a {
 }
 .mentors {
   background: #eeeeee;
-  padding: 20px 0;
+  padding: 40px 0 20px 0;
 }
 .mentors .mentor-tile-cont {
   width: 100%;
@@ -265,7 +306,7 @@ footer nav a {
   justify-content: space-evenly;
   align-items: center;
 }
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
   .mentors .mentor-tile-cont {
     flex-direction: row;
   }
@@ -286,7 +327,7 @@ footer nav a {
   border-radius: 100px;
 }
 .classes {
-  padding: 20px 0;
+  padding: 40px 0 20px 0;
 }
 .classes h2 {
   text-align: center;
@@ -302,8 +343,9 @@ footer nav a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column-reverse;
   width: 40%;
-  height: 80px;
+  height: 180px;
   background: #eeeeee;
   font-size: 2rem;
   margin: 20px 0;
@@ -317,6 +359,7 @@ footer nav a {
 }
 .classes img {
   max-height: 80%;
+  max-width: 60%;
 }
 @media (min-width: 700px) {
   .classes img {
@@ -347,6 +390,17 @@ footer nav a {
   margin: 10px 0;
   text-align: center;
 }
+.about-project .about-cont .github {
+  width: 5.6rem;
+  margin: 0 auto;
+}
+.about-project .about-cont .github a {
+  display: inline-block;
+  width: 5.6rem;
+  text-decoration: none;
+  font-size: 6.5rem;
+  color: #9370DB;
+}
 .about-project .about-item-cont {
   display: flex;
   justify-content: space-evenly;
@@ -370,12 +424,12 @@ footer nav a {
 }
 .meet-team {
   background: #eeeeee;
-  padding: 20px 0;
+  padding: 50px 0 20px 0;
 }
 .meet-team .team-tile-cont {
   width: 100%;
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -395,7 +449,7 @@ footer nav a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin: 20px 0;
   padding: 10px 30;
 }
 @media (min-width: 700px) {
@@ -406,6 +460,12 @@ footer nav a {
 .meet-team .team .team-text {
   margin: 10px 20px;
   text-align: center;
+}
+.meet-team .social-icons a {
+  text-decoration: none;
+  font-size: 3.5rem;
+  margin: 5px 10px;
+  color: #9370DB;
 }
 .meet-team img {
   width: 100px;
