@@ -178,6 +178,7 @@ button {
   width: 100%;
   height: 60px;
   border-bottom: 2px solid #d3d3d3;
+  z-index: 5;
 }
 .nav-header .logo {
   display: flex;
@@ -238,7 +239,7 @@ footer nav a {
     height: 500px;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
   .main-header {
     height: 750px;
   }
@@ -294,7 +295,7 @@ footer nav a {
 }
 .mentors {
   background: #eeeeee;
-  padding: 20px 0;
+  padding: 40px 0 20px 0;
 }
 .mentors .mentor-tile-cont {
   width: 100%;
@@ -305,7 +306,7 @@ footer nav a {
   justify-content: space-evenly;
   align-items: center;
 }
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
   .mentors .mentor-tile-cont {
     flex-direction: row;
   }
@@ -326,7 +327,7 @@ footer nav a {
   border-radius: 100px;
 }
 .classes {
-  padding: 20px 0;
+  padding: 40px 0 20px 0;
 }
 .classes h2 {
   text-align: center;
@@ -342,8 +343,9 @@ footer nav a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column-reverse;
   width: 40%;
-  height: 80px;
+  height: 180px;
   background: #eeeeee;
   font-size: 2rem;
   margin: 20px 0;
@@ -357,6 +359,7 @@ footer nav a {
 }
 .classes img {
   max-height: 80%;
+  max-width: 60%;
 }
 @media (min-width: 700px) {
   .classes img {
@@ -387,6 +390,17 @@ footer nav a {
   margin: 10px 0;
   text-align: center;
 }
+.about-project .about-cont .github {
+  width: 5.6rem;
+  margin: 0 auto;
+}
+.about-project .about-cont .github a {
+  display: inline-block;
+  width: 5.6rem;
+  text-decoration: none;
+  font-size: 6.5rem;
+  color: #9370DB;
+}
 .about-project .about-item-cont {
   display: flex;
   justify-content: space-evenly;
@@ -410,12 +424,12 @@ footer nav a {
 }
 .meet-team {
   background: #eeeeee;
-  padding: 20px 0;
+  padding: 50px 0 20px 0;
 }
 .meet-team .team-tile-cont {
   width: 100%;
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -435,7 +449,7 @@ footer nav a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin: 20px 0;
   padding: 10px 30;
 }
 @media (min-width: 700px) {
@@ -446,6 +460,12 @@ footer nav a {
 .meet-team .team .team-text {
   margin: 10px 20px;
   text-align: center;
+}
+.meet-team .social-icons a {
+  text-decoration: none;
+  font-size: 3.5rem;
+  margin: 5px 10px;
+  color: #9370DB;
 }
 .meet-team img {
   width: 100px;
