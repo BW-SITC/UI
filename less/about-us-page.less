@@ -4,14 +4,9 @@
     .about-cont{
         width: 100%;
 
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        .flex(column, space-evenly, none);
 
-        flex-direction: column;
-
-        max-width: @max-content-width;
-        margin: 0 auto;
+        .limit-max-width();
     }
 
     .how-img{
@@ -33,26 +28,18 @@
 
             a{
                 display: inline-block;
+                .link();
                 width:5.6rem;
-                text-decoration: none;
                 font-size: 6.5rem;
-                color: @school-color;
             }
         }
     }
 
-    
-
     .about-item-cont{
+        .flex(column, space-evenly, none);
+        align-items: flex-start;
 
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-
-        flex-direction: column;
-
-        max-width: @max-content-width;
-        margin: 0 auto;
+        .limit-max-width();
 
         @media @tablet{
             flex-direction: row;
@@ -74,17 +61,13 @@
 
     padding: 50px 0 20px 0;
 
-
     .team-tile-cont{
         width: 100%;
         
         max-width: @max-content-width;
         margin: 20px auto;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        .flex(column, space-evenly, none);
     
         @media @tablet{
             flex-direction: row;
@@ -96,11 +79,13 @@
         text-align: center;
     }
 
+    h4{
+        margin: 5px 0;
+        color: @grey-text;
+    }
+
     .team{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        .flex(column, center, none);
 
         margin: 20px 0;
         padding: 10px 30;
@@ -118,10 +103,9 @@
 
     .social-icons{
         a{
-            text-decoration: none;
+            .link();
             font-size: 3.5rem;
             margin: 5px 10px;
-            color: @school-color;
         }
     }
     img{
